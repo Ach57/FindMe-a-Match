@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <!--Website will be available for both computer and phone-->
+    <head>
+        <title>FindMe a Match</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css"> <!--Style sheet-->
+
+    </head>
+
+    <body>
+        <div class="main-section">
+            <div> <!-- GithubLogo Author github             Home/Submission-->
+                  
+                <ul class="item-list">
+                    <li>
+                         <img src="/image/github.png" alt="githubLogo" class="image-style">
+                         <div class="shine-effect"></div>
+                    </li>
+                    <li class="header-style">User-Friendly</li>
+                    <li class="header-style">Design</li>
+                    <li class="contact-us"><a href="mailto:chenitiachraf08@gmail.com?cc=cc_email@example.com&bcc=bcc_email@example.com&subject=Your%20Subject%20Here&body=Your%20email%20body%20text%20here.">Contact Us</a></li>
+                    <li>
+                        <div class="nav-button">
+                            <a href="/home" class="rainbow-text" id="home">Home</a>
+                            <a href="/" class="active rainbow-text" id="submission">Submission</a>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="privacy">
+                <h3>Your privacy matters to us, so don't worry this information won't be revealed to no identity on earth :)</h3>
+            </div>
+            <!--Form Section-->
+            <div class="main-box">
+                <div class="image-container">
+                    <img src="/image/Cupid-Background-PNG.png" alt="Cupid">
+                </div>
+                <div class="form-section">
+                    <h1>Match Making <img src="/image/Cupid-Background-PNG.png" alt="cupidImg"></h1>
+                    <form action="/submit" method="POST">
+                        <label>First Name: </label>
+                        <input type="text" name="firstName" placeholder="Enter your name..." required>
+                        <br><br>
+                        
+                        <label>E-mail: </label>
+                        <input type="email" name="email" placeholder="xxx@email.com" required>
+                        <br><br>
+                        
+                        <label>Age: </label>
+                        <input type="number" name="age" placeholder="Enter your age..." required>
+                        <br><br>
+                        
+                        <label>Please enter a valid email address so we can contact you further :)</label>
+                        <br>
+                        
+                        <label>Tell us about yourself. You can give any information you feel is important for us to know</label>
+                        <br><br>
+                        
+                        <textarea name="about" rows="5" cols="50" placeholder="text..." required></textarea>
+                        <br><br>
+                        
+                        <h2>More about you:</h2>
+                        <br><br>
+                        
+                        <label for="smartSlider">Smart</label>
+                        <input type="range" name="smartSlider" id="smartSlider" class="slider" min="-5" max="5" value="0" step="1">
+                        <div class="value-display" id="smartDisplay">0</div>
+                        <br><br>
+                        
+                        <label for="empatheticSlider">Empathetic</label>
+                        <input type="range" name="empatheticSlider" id="empatheticSlider" class="slider" min="-5" max="5" value="0" step="1">
+                        <div class="value-display" id="empatheticDisplay">0</div>
+                        <br><br>
+                    
+                        <label for="funnySlider">Funny</label>
+                        <input type="range" name="funnySlider" id="funnySlider" class="slider" min="-5" max="5" value="0" step="1">
+                        <div class="value-display" id="funnyDisplay">0</div>
+                        <br><br>
+                        
+                        <label for="caringSlider">Caring</label>
+                        <input type="range" name="caringSlider" id="caringSlider" class="slider" min="-5" max="5" value="0" step="1">
+                        <div class="value-display" id="caringDisplay">0</div>
+                        <br><br>
+                    
+                        <label for="manlySlider">Manly and Mature</label>
+                        <input type="range" name="manlySlider" id="manlySlider" class="slider" min="-5" max="5" value="0" step="1">
+                        <div class="value-display" id="manlyDisplay">0</div>
+                        <br><br>
+                    
+                        <label for="patientSlider">Patience</label>
+                        <input type="range" name="patientSlider" id="patientSlider" class="slider" min="-5" max="5" value="0" step="1">
+                        <div class="value-display" id="patientDisplay">0</div>
+                        <br><br>
+                    
+                        <label for="artistSlider">Artist</label>
+                        <input type="range" name="artistSlider" id="artistSlider" class="slider" min="-5" max="5" value="0" step="1">
+                        <div class="value-display" id="artistsDisplay">0</div>
+                        <br><br>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                </div>
+                <div class="image-container">
+                    <img src="/image/cupid1.png" alt="Cupid" >
+                </div>
+
+            </div>
+
+
+
+        </div>
+        
+
+        <script src="/js/config.js"></script>
+    </body>
+
+
+
+
+</html>

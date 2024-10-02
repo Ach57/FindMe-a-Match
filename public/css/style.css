@@ -1,0 +1,281 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body{
+    background-color: pink;
+}
+
+.main-section{
+   margin: 30px;
+    background-color: palevioletred;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.main-box p {
+    color: white;
+
+}
+
+.main-box ul{
+    color: white;
+}
+
+.item-list{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item-list li{
+    margin-bottom: 10px;
+}
+
+.item-list li:nth-child(3){
+    justify-self: flex-end;
+    text-align: right;
+}
+
+.image-style{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.image-style:hover{
+    transform: scale(1.05);
+    filter: brightness(1.5);
+}
+
+
+
+.nav-button{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: sandybrown;
+    
+}
+
+.nav-button a{  
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#home.active{
+    color: white;
+}
+#submission.active{
+    color: white;
+}
+
+.nav-button a:not(.active){
+    color: white;
+}
+
+#home.active{
+    transform: translateX(0);
+}
+#submission.active{
+    transform: trasnlateX(-100%);
+}
+
+.header-style{
+    color: white;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.contact-us{
+    color: white;
+    padding: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.contact-us:hover{
+    transform: scale(1.05);
+    filter: brightness(1.5);
+    color: sandybrown;
+}
+
+@keyframes rainbow {
+    0% { color: red;}
+    16%{color: orange;}
+    33% {color: yellow;}
+    50% {color: green;}
+    66% {color: blue;}
+    83% {color: indigo;}
+    100%{color: violet;}
+
+}
+
+.rainbow-text.active{
+    animation: rainbow 2s linear infinite;
+}
+
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box h1{
+    color: white;
+}
+
+.privacy{
+    color: white;
+    text-align: center;
+}
+
+.main-box img{
+    width: 100px;
+    height: 100px;
+}
+
+.form-section{
+    text-align: center;
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form-section h1{
+    font-size: 40pt;
+    color: white;
+}
+.form-section h2{
+    color: white;
+}
+
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    background: pink;
+    outline: none;
+    width: 100%;
+    margin: 20px 0;
+}
+.slider::-webkit-slider-runnable-track{
+    background:pink;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.slider::-moz-range-track{
+    background-color: pink;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width:20px;
+    height: 20px;
+    background-color: hotpink;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.slider::-moz-range-thumb{
+    width: 20px;
+    height: 20px;
+    background-color: hotpink;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.value-display{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.image-container{
+    
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+form input{
+    border-radius: 5px;
+    background-color: rgb(255, 189, 255);
+}
+form label{
+    color: white;
+    font-weight: bold;
+}
+
+form button{
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12pt;
+    background-color: palevioletred;
+    cursor: pointer;
+    color: white;
+}
+form button:hover{
+    transform: scale(1.05);
+    filter: brightness(1.4);
+    font-weight: bold;
+}
+
+form textarea{
+    border-radius: 8px;
+    background-color: rgb(255, 189, 255);
+    
+}
+
+
+li .shine-effect{
+    position: absolute;
+    top: 30px;;
+    left: -20%;
+    width: 20%;
+    height: 10%;
+    background:linear-gradient(120deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.8)50%, rgba(255,255,255,0.1) 100%);
+    transform: skewX(-30deg);
+    animation: shine 2s infinite;
+
+}
+
+@keyframes shine {
+    0%{
+        left:10%;
+    }
+
+    100%{
+        left:85%;
+    }
+}
