@@ -79,3 +79,7 @@ To run this project, you need to have the following installed:
 ├── .env            # Environment variables
 ├── package.json    # Project dependencies
 └── README.md       # Project documentation
+```
+
+## Presentation:
+<img width="950" alt="Screenshot 2024-10-03 105304" src="https://github.com/user-attachments/assets/54740680-4401-4cd9-b209-01a5fc4b454e">
