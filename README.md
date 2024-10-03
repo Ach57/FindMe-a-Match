@@ -68,3 +68,14 @@ To run this project, you need to have the following installed:
 - `GET /`: Renders the index page.
 - `GET /home`: Renders the home page.
 - `POST /submit`: Handles form submission and saves data to Firebase Firestore.
+
+## Project Structure
+
+```bash
+.
+├── public          # Static files
+├── views           # EJS templates
+├── app.js          # Main application file
+├── .env            # Environment variables
+├── package.json    # Project dependencies
+└── README.md       # Project documentation
